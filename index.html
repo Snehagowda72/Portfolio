@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sneha A — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,=" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="container nav">
+      <div class="brand">
+        <img src="profile.jpeg" alt="Sneha profile" class="brand-img" />
+        <div class="brand-text">
+          <h1>Sneha A</h1>
+          <p class="muted">MCA • Web & Data</p>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1 class="reveal">Hi, I'm <span class="accent">Sneha</span></h1>
+        <p class="big-text">
+         A passionate UI/UX and Web Developer focused on creating modern,
+        responsive, and accessible digital experiences.  
+        I combine strong design thinking with front-end development and 
+        data analysis to build intuitive products that solve real-world problems.
+        </p>
+        <div class="cta reveal delay-2">
+          <a class="btn" href="#projects">See Projects</a>          <!-- Gradient button -->
+          <a class="btn outline" id="bottomDownloadResume" href="resume.pdf" download>Download Resume</a> <!-- Outline button -->
+        </div>
+
+
+
+        <div class="stats reveal delay-3">
+          <div><strong>Python</strong><span>•</span>Intermediate</div>
+          <div><strong>HTML/CSS</strong><span>•</span>Advanced</div>
+          <div><strong>Java</strong><span>•</span>Intermediate</div>
+        </div>
+      </div>
+
+
+      <div class="hero-right reveal delay-1">
+        <div class="portrait-frame">
+          <img src="profile.jpeg" alt="Sneha portrait" class="portrait" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section section-anim">
+      <h3>About me</h3>
+      <p>
+        A confident and conscientious learner with strong technical skills and 
+        a creative approach to problem-solving. I specialize in Python, 
+        Machine Learning/Deep Learning, OpenCV, and front-end development (HTML, CSS, JS).
+        I enjoy designing user-friendly interfaces and developing intelligent, 
+        efficient backend systems.
+      </p>
+      <div class="quick-info">
+        <div><strong>Location :</strong> Bengaluru, Karnataka</div>
+        <div><strong>Education :</strong> MCA — Alliance University</div>
+        <div><strong>Contact :</strong> snehagowda0226@gmail.com</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+<!-- Projects -->
+<section id="projects" class="container">
+  <h3 class="section-title">Projects</h3>
+  <div class="grid">
+    <!-- Project 1 -->
+    <article class="project card project-anim">
+      <div class="project-content">
+        <h4>Paws & Hearts</h4>
+        <p>Pet adoption website with responsive UI and accessibility focus.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>Accessibility</span></div>
+      </div>
+      <div class="project-links">
+        <button class="project-link" onclick="showDetails('paws')">View Details →</button>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project card project-anim delay-1">
+      <div class="project-content">
+        <h4>Food Waste Management</h4>
+        <p>Java + MySQL system to track and reduce food waste with analytics.</p>
+        <div class="tags"><span>Java</span><span>MySQL</span><span>Analytics</span></div>
+      </div>
+      <div class="project-links">
+        <button class="project-link" onclick="showDetails('food')">View Details →</button>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project card project-anim delay-2">
+      <div class="project-content">
+        <h4>BSF Road Safety (Figma)</h4>
+        <p>UI/UX wireframes and prototypes to improve road safety awareness.</p>
+        <div class="tags"><span>Figma</span><span>UX</span><span>Design</span></div>
+      </div>
+      <div class="project-links">
+        <button class="project-link" onclick="showDetails('bsf')">View Details →</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h4 id="modalTitle"></h4>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<!-- Modal for Project Details -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h4 id="modalTitle"></h4>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+    <!-- Skills -->
+    <section id="skills" class="container card section-anim">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+       <div class="skill-card">Python , Java</div>
+       <div class="skill-card">HTML/CSS</div>
+       <div class="skill-card">My SQL</div>
+       <div class="skill-card">Figma , Adobe XD</div>
+       <div class="skill-card">VS Code , Android Studio</div>
+       <div class="skill-card">Machine Learning</div>
+      </div>
+
+    </section>
+
+    
+
+    <!-- Contact -->
+    <section id="contact" class="container card section-anim contact-center">
+      <h3>Contact</h3>
+
+      <p>
+       📍 Bangalore, India • 📞 +91 9591664933 • 📧 snehagowda0226@gmail.com
+      </p>
+
+      <p>
+      <a href="https://www.linkedin.com/in/sneha-a-b42176302" target="_blank" class="btn outline">LinkedIn</a>
+      <a href="https://github.com/Snehagowda72" target="_blank" class="btn outline">GitHub</a>
+      </p>
+
+      <p>
+       <a id="bottomDownloadResume" href="resume.pdf" download class="btn">Download Resume</a>
+      </p>
+
+    </section>
+
+
+    <footer class="container footer contact-center">
+      <p>© <span id="year"></span> Sneha A Portfolio— Built with Carer • </p>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
